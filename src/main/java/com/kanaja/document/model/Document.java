@@ -20,5 +20,9 @@ public interface Document {
 	public void setModifiedDate(Date modifiedDate);
 	public Date getIndexedDate();
 	public void setIndexedDate(Date indexedDate);
+	public String getAuthor();
+	public void setAuthor(String author);
+	public Boolean getType();
+	public void setType(Boolean type);
 
 }

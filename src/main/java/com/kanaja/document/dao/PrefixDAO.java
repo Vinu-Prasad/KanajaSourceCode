@@ -11,8 +11,10 @@ import com.kanaja.document.model.Prefix;
  */
 public interface PrefixDAO {
 
-	public void save(Prefix prefix);
+	public Integer save(Prefix prefix);
 	public Prefix getPrefixById(Integer prefixId);
 	public void remove(Prefix prefix);
 	public List<Prefix> getDocumentPrefixList(Integer documentId);
+	public Prefix getPrefixByName(String prefix);
+	public void update(Prefix prefix);
 }

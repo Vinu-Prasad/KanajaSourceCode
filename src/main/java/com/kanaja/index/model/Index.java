@@ -12,16 +12,12 @@ import com.kanaja.document.model.Prefix;
  */
 public interface Index {
 	
-	public Prefix getPrefix();
-	public void setPrefix(Prefix prefix);
-	public Document getDocument();
-	public void getDocument(Document document);
-	public Category getCategory();
-	public void setCategory(Category category);
+	public PrefixPK getPrefixPK();
+	public void setPrefixPK(PrefixPK prefixPk);
 	public Author getAuthor();
 	public void setAuthor(Author author);
-	public Integer getPrefixFrequency();
-	public void setPrefixFrequency(Integer pf);
+	public Double getPrefixFrequency();
+	public void setPrefixFrequency(Double pf);
 	public Double getInverseDocumentFrequency();
 	public void setInverseDocumentFrequency(Double idf);
 	public Double getPfIdfScore();
